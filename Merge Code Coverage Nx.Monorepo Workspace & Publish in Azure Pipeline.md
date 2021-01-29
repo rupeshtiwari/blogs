@@ -7,6 +7,9 @@ image: https://i.imgur.com/6gxkEV3.jpg
 ---
 
 # Merge Code Coverage Nx.Monorepo Workspace & Publish in Azure Pipeline
+
+[![hackmd-github-sync-badge](https://hackmd.io/bohA65OyRBmNYjadH1LqhQ/badge)](https://hackmd.io/bohA65OyRBmNYjadH1LqhQ)
+
 ![](https://i.imgur.com/6gxkEV3.jpg)
 
 If you are working on [Nx Monorepo](https://nx.dev/) workspace and have many angular projects. And if you are using Azure CI/CD Pipeline then you might aware that there is no inbuilt azure task which will combine all of your code coverage xml. Therefore, the only workaround is you must consolidated all code coverage reports in one and publish that merged one only. 
@@ -19,6 +22,7 @@ Reviewing the code coverage result helps to identify code path(s) that are not c
 ![](https://i.imgur.com/LlgbXvN.png)
 
 You can see at file level in azure pipeline
+
 ![](https://i.imgur.com/7FuBO8Z.png)
 
 
