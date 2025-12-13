@@ -1,40 +1,75 @@
-
 /* Mobile Responsive Fixes for Chirpy Theme */
-@media (max-width: 768px) {
-  /* Fix content overflow */
+
+/* Force proper viewport behavior */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+@media (max-width: 849px) {
+  /* Hide sidebar on mobile - Chirpy uses 849px breakpoint */
+  #sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  #sidebar.show {
+    transform: translateX(0);
+  }
+  
+  /* Main content takes full width */
+  #main-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Fix topbar */
+  #topbar-wrapper {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Ensure content doesn't overflow */
+  .container,
+  .post-content,
+  .main-content {
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Fix code blocks */
   .post-content pre,
-  .post-content code {
-    max-width: 100%;
-    overflow-x: auto;
+  .post-content code,
+  pre.highlight,
+  .highlight pre {
+    max-width: 100% !important;
+    overflow-x: auto !important;
     word-wrap: break-word;
-    white-space: pre-wrap;
+    white-space: pre-wrap !important;
+  }
+  
+  pre {
+    font-size: 12px !important;
+    padding: 10px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   
   /* Fix images */
-  .post-content img {
+  .post-content img,
+  img {
     max-width: 100% !important;
     height: auto !important;
   }
   
-  /* Fix sidebar */
-  #sidebar {
-    width: 100%;
-  }
-  
-  /* Fix main content */
-  .main-content,
-  #main-wrapper,
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  /* Fix code blocks */
-  pre {
-    font-size: 12px !important;
-    padding: 10px !important;
+  /* Fix headings */
+  h1, h2, h3, h4 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   /* Banner spacing */
@@ -42,13 +77,31 @@
     padding-top: 50px;
   }
   
-  /* Fix headings */
-  h1, h2, h3 {
-    word-wrap: break-word;
+  /* Fix tables */
+  table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
   }
 }
 
 /* Ensure banner doesn't break layout */
 #fsm-banner-wrap {
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Fix for very small screens */
+@media (max-width: 576px) {
+  .post-content pre {
+    font-size: 11px !important;
+  }
+  
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.3rem !important;
+  }
 }
