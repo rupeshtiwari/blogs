@@ -1,0 +1,170 @@
+
+/* Blog Enhancement Features Styles */
+
+/* ========== COPY BUTTON ========== */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #374151;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background 0.2s;
+  z-index: 10;
+}
+pre:hover .copy-btn {
+  opacity: 1;
+}
+.copy-btn:hover {
+  background: #4b5563;
+}
+.copy-btn.copied {
+  background: #059669;
+  border-color: #059669;
+}
+
+/* ========== SCROLL TO TOP ========== */
+#scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C9A227, #D4AF37);
+  color: #0A1628;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 9998;
+}
+#scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#scroll-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* ========== SOCIAL SHARE ========== */
+.social-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0 25px;
+  padding: 12px 16px;
+  background: rgba(30, 58, 95, 0.3);
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+.share-label {
+  font-weight: 600;
+  color: #94a3b8;
+  font-size: 14px;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.share-btn:hover {
+  transform: scale(1.1);
+}
+.share-btn.twitter { background: #1DA1F2; color: white; }
+.share-btn.linkedin { background: #0077B5; color: white; }
+.share-btn.facebook { background: #4267B2; color: white; }
+.share-btn.whatsapp { background: #25D366; font-size: 18px; }
+.share-btn.email { background: #6B7280; font-size: 16px; }
+
+/* ========== READING PROGRESS BAR ========== */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0,0,0,0.1);
+  z-index: 10000;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #C9A227, #D4AF37, #E5C158);
+  transition: width 0.1s ease-out;
+}
+
+/* ========== PRINT BUTTON ========== */
+#print-btn {
+  padding: 6px 14px;
+  background: #374151;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 10px;
+  transition: background 0.2s;
+}
+#print-btn:hover {
+  background: #4b5563;
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+  #fsm-banner, #fsm-banner-wrap, #scroll-to-top, .social-share, 
+  #print-btn, #reading-progress, .copy-btn, #sidebar, nav, footer,
+  .toc-wrapper, .comments, .related-posts {
+    display: none !important;
+  }
+  body {
+    padding-top: 0 !important;
+  }
+  .post-content, article {
+    max-width: 100% !important;
+  }
+}
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 768px) {
+  #scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+  .social-share {
+    padding: 10px;
+    gap: 8px;
+  }
+  .share-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .copy-btn {
+    opacity: 1;
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
