@@ -1,0 +1,54 @@
+
+/* Mobile Responsive Fixes for Chirpy Theme */
+@media (max-width: 768px) {
+  /* Fix content overflow */
+  .post-content pre,
+  .post-content code {
+    max-width: 100%;
+    overflow-x: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  
+  /* Fix images */
+  .post-content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Fix sidebar */
+  #sidebar {
+    width: 100%;
+  }
+  
+  /* Fix main content */
+  .main-content,
+  #main-wrapper,
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Fix code blocks */
+  pre {
+    font-size: 12px !important;
+    padding: 10px !important;
+  }
+  
+  /* Banner spacing */
+  body {
+    padding-top: 50px;
+  }
+  
+  /* Fix headings */
+  h1, h2, h3 {
+    word-wrap: break-word;
+  }
+}
+
+/* Ensure banner doesn't break layout */
+#fsm-banner-wrap {
+  box-sizing: border-box;
+}
