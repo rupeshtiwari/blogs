@@ -1,11 +1,15 @@
 main:
-  - title: "blog"
+  - title: "Blog"
     url: /posts/
-  - title: "fullstackmaster"
+  - title: "Crack FAANG Interview"
     url: https://fullstackmaster.net
-  - title: "youtube"
+    highlight: true
+  - title: "Book 1:1 Call"
+    url: https://topmate.io/nicetss
+    highlight: true
+  - title: "YouTube"
     url: https://youtube.com/fullstackmaster
-  - title: "tags"
+  - title: "Tags"
     url: /tags/
-  - title: "consulting"
-    url: /consulting/
+  - title: "About"
+    url: /about/
