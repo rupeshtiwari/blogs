@@ -3,9 +3,6 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# Force light mode - this overrides browser preference
-theme_mode: light
-
 # The language of the webpage
 lang: en
 
@@ -37,15 +34,27 @@ social:
 webmaster_verifications:
   google: google5e9eb0a8e9d3c441
 
+# Force light theme mode
+theme_mode: light
+
 avatar: /assets/img/bio-photo.jpg
 toc: true
-paginate: 10
-baseurl: ""
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled:
 
 pwa:
   enabled: true
   cache:
     enabled: true
+    deny_paths:
+
+paginate: 10
+baseurl: ""
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
@@ -114,12 +123,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-archives
-  - jemoji
