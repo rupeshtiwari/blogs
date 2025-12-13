@@ -41,8 +41,22 @@ theme_mode: light
 avatar: /assets/img/bio-photo.jpg
 toc: true
 
+# Giscus comments - uses GitHub Discussions
 comments:
-  provider:
+  provider: giscus
+  giscus:
+    repo: rupeshtiwari/blogs
+    repo_id: # Get from https://giscus.app after enabling Discussions
+    category: Announcements
+    category_id: # Get from https://giscus.app
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: bottom
+    theme: preferred_color_scheme
+    lang: en
+    loading: lazy
 
 assets:
   self_host:
