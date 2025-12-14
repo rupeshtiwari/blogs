@@ -89,7 +89,7 @@ Need personalized coaching for your system design interviews?
 
 **I've helped 50+ engineers land offers at FAANG companies with an average $285K compensation increase.**
 
-- **[Book a Discovery Call](https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true)** - Free 15-min consultation
+- **[Book a Discovery Call](https://www.fullstackmaster.net/book)** - Free 15-min consultation
 - **[View My Coaching Profile](https://igotanoffer.com/en/coach/rupesh)** - 5.0 rating, 51+ verified reviews
 
 ---
