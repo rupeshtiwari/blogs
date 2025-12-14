@@ -57,7 +57,7 @@ Advancing from Senior to Director/VP:
 
 Need 1:1 guidance?
 
-- **[Executive Interview Coaching](https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true)** - I've helped 50+ engineers land Director/VP roles at FAANG with $285K average compensation increase
+- **[Executive Interview Coaching](https://www.fullstackmaster.net/book)** - I've helped 50+ engineers land Director/VP roles at FAANG with $285K average compensation increase
 - **[Get My Free Resource Kit](https://rupeshtiwari.gumroad.com/l/rupesh-kit)** - Templates, guides, and exclusive content
 
 ---
