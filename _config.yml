@@ -35,6 +35,11 @@ social:
 webmaster_verifications:
   google: google5e9eb0a8e9d3c441
 
+# Google Analytics GA4
+analytics:
+  google:
+    id: G-R0NZCD5D62
+
 # Force light theme mode
 theme_mode: light
 
