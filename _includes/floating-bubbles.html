@@ -1,0 +1,56 @@
+<!-- Floating Navigation Bubbles - Left Side -->
+<div class="floating-bubbles" style="position: fixed; left: 20px; top: 50%; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 12px;">
+  
+  <!-- Crack FAANG Interview Bubble -->
+  <a href="/tabs/system-design-interview/" 
+     class="bubble-link"
+     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
+     data-testid="bubble-crack-faang"
+     title="Crack FAANG Interview">
+    <span style="font-size: 24px; color: #1e3a5f;">💼</span>
+    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1e3a5f; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Crack FAANG Interview</span>
+  </a>
+  
+  <!-- Book 1:1 Coaching Bubble -->
+  <a href="https://www.fullstackmaster.net/book" 
+     target="_blank" 
+     rel="noopener"
+     class="bubble-link"
+     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(74, 222, 128, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
+     data-testid="bubble-book-coaching"
+     title="Book 1:1 Coaching">
+    <span style="font-size: 24px; color: #1a2f26;">📅</span>
+    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1a2f26; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Book 1:1 Coaching</span>
+  </a>
+  
+  <!-- Get Free Kit Bubble -->
+  <a href="https://rupeshtiwari.gumroad.com/l/rupesh-kit" 
+     target="_blank" 
+     rel="noopener"
+     class="bubble-link"
+     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
+     data-testid="bubble-free-kit"
+     title="Get Free Interview Kit">
+    <span style="font-size: 24px; color: white;">📦</span>
+    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1d4ed8; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Free Interview Kit</span>
+  </a>
+  
+</div>
+
+<style>
+  .floating-bubbles .bubble-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .floating-bubbles .bubble-link:hover .bubble-tooltip {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Hide on mobile - screen too narrow */
+  @media (max-width: 1200px) {
+    .floating-bubbles {
+      display: none !important;
+    }
+  }
+</style>
