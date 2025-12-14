@@ -51,9 +51,9 @@ comments:
   provider: giscus
   giscus:
     repo: rupeshtiwari/blogs
-    repo_id: # Get from https://giscus.app after enabling Discussions
+    repo_id: R_kgDOQnXhhQ
     category: Announcements
-    category_id: # Get from https://giscus.app
+    category_id: DIC_kwDOQnXhhc4CzwTG
     mapping: pathname
     strict: 0
     reactions_enabled: 1
