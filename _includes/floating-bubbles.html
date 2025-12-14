@@ -1,14 +1,16 @@
-<!-- Floating Navigation Bubbles - Left Side -->
-<div class="floating-bubbles" style="position: fixed; left: 20px; top: 50%; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 12px;">
+<!-- Floating Navigation Bubbles - Right Side -->
+<div class="floating-bubbles" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 12px;">
   
-  <!-- Crack FAANG Interview Bubble -->
-  <a href="/tabs/system-design-interview/" 
+  <!-- Start Learning Bubble -->
+  <a href="https://fullstackmaster.net" 
+     target="_blank" 
+     rel="noopener"
      class="bubble-link"
      style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
-     data-testid="bubble-crack-faang"
-     title="Crack FAANG Interview">
-    <span style="font-size: 24px; color: #1e3a5f;">💼</span>
-    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1e3a5f; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Crack FAANG Interview</span>
+     data-testid="bubble-start-learning"
+     title="Start Learning">
+    <svg width="24" height="24" fill="#1e3a5f" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+    <span class="bubble-tooltip" style="position: absolute; right: 70px; background: #1e3a5f; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Start Learning</span>
   </a>
   
   <!-- Book 1:1 Coaching Bubble -->
@@ -18,9 +20,19 @@
      class="bubble-link"
      style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(74, 222, 128, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
      data-testid="bubble-book-coaching"
-     title="Book 1:1 Coaching">
-    <span style="font-size: 24px; color: #1a2f26;">📅</span>
-    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1a2f26; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Book 1:1 Coaching</span>
+     title="Book 1:1 Call">
+    <svg width="24" height="24" fill="#1a2f26" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+    <span class="bubble-tooltip" style="position: absolute; right: 70px; background: #1a2f26; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Book 1:1 Call</span>
+  </a>
+  
+  <!-- Crack FAANG Interview Bubble -->
+  <a href="/tabs/system-design-interview/" 
+     class="bubble-link"
+     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
+     data-testid="bubble-crack-faang"
+     title="Crack FAANG Interview">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+    <span class="bubble-tooltip" style="position: absolute; right: 70px; background: #1d4ed8; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Crack FAANG Interview</span>
   </a>
   
   <!-- Get Free Kit Bubble -->
@@ -28,11 +40,11 @@
      target="_blank" 
      rel="noopener"
      class="bubble-link"
-     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
+     style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); border-radius: 50%; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4); text-decoration: none; transition: all 0.3s ease; position: relative;"
      data-testid="bubble-free-kit"
-     title="Get Free Interview Kit">
-    <span style="font-size: 24px; color: white;">📦</span>
-    <span class="bubble-tooltip" style="position: absolute; left: 70px; background: #1d4ed8; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Free Interview Kit</span>
+     title="Free Interview Kit">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+    <span class="bubble-tooltip" style="position: absolute; right: 70px; background: #7c3aed; color: white; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; white-space: nowrap; opacity: 0; visibility: hidden; transition: all 0.3s ease; font-weight: 600;">Free Interview Kit</span>
   </a>
   
 </div>
@@ -48,7 +60,7 @@
   }
   
   /* Hide on mobile - screen too narrow */
-  @media (max-width: 1200px) {
+  @media (max-width: 992px) {
     .floating-bubbles {
       display: none !important;
     }
